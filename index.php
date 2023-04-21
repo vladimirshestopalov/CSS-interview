@@ -39,6 +39,6 @@ $time_utc5=$now->format('Y-m-d G:i:s');
 </form>
 <hr>
 <?=$dt?>: <input type="text" value="<?=$time_default?>" disabled>
-    UTC+5: <input type="text" value="<?=$time_utc5?>" disabled>
+    +5 часов: <input type="text" value="<?=$time_utc5?>" disabled>
 
 </html>
