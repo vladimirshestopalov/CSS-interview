@@ -38,8 +38,7 @@ $time_utc5=$now->format('Y-m-d G:i:s');
     <input type="submit" value="Проверить">
 </form>
 <hr>
-    <input type="text" value="<?=$time_default?>" disabled>
-    <input type="text" value="<?=$time_utc5?>" disabled>
-<?=$dt?>
+<?=$dt?>: <input type="text" value="<?=$time_default?>" disabled>
+    UTC+5: <input type="text" value="<?=$time_utc5?>" disabled>
 
 </html>
