@@ -21,6 +21,13 @@ if(!empty($_GET)) {
     $needle="";
     $output="";
 }
+
+$dt=date_default_timezone_get();
+$time_default=date('Y-m-d G:i:s');
+
+date_default_timezone_set('Asia/Karachi');
+$now=new DateTime();
+$time_utc5=$now->format('Y-m-d G:i:s');
 ?>
 <!DOCTYPE html>
 <form>
@@ -30,4 +37,9 @@ if(!empty($_GET)) {
     <input type="text" name="out" value="<?=$output?>" placeholder="вывод" disabled>
     <input type="submit" value="Проверить">
 </form>
+<hr>
+    <input type="text" value="<?=$time_default?>" disabled>
+    <input type="text" value="<?=$time_utc5?>" disabled>
+<?=$dt?>
+
 </html>
