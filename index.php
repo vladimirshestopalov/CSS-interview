@@ -25,7 +25,7 @@ if(!empty($_GET)) {
 $dt=date_default_timezone_get();
 $time_default=date('Y-m-d G:i:s');
 
-date_default_timezone_set('Asia/Karachi');
+date_default_timezone_set('etc/GMT-5');
 $now=new DateTime();
 $time_utc5=$now->format('Y-m-d G:i:s');
 ?>
